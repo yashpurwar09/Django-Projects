@@ -1,0 +1,16 @@
+<HTML>
+    <Head>
+        <title>Celery Project </title>
+    </head>
+    <body>
+        <p>Result Status</p>
+        {% if result %}
+        <p>Task Result: {{ result.result }}</p>
+        <p>Task Id: {{ result.id }}</p>
+        <p>Task State: {{ result.state }}</p>
+        <p>Task Status: {{ result.status }}</p>
+        <p>Task Successful: {{ result.successful }}</p>
+        <p>Task Failed: {{ result.failed }}</p>
+        {% endif %}
+    </body>
+</HTML>

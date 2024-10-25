@@ -1,0 +1,14 @@
+<HTML>
+    <Head>
+        <title>Celery Project </title>
+    </head>
+    <body>
+        <p>Hello Celery</p>
+        <p>{% if result.id %}
+        <a href="{% url 'check_result' result.id %}">Addition Result Check</a>
+        {% endif %}</p>
+        <p>{% if result1.id %}
+        <a href="{% url 'check_result' result1.id %}">Subtraction Result Check</a>
+        {% endif %}</p>
+    </body>
+</HTML>
